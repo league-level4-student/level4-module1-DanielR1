@@ -26,19 +26,20 @@ public class SwitchStatementDemo {
 			 *  What did you notice? What does 'break;' do?
 			 */
 			int x = new Random().nextInt(3);
+		
 			switch(x) {
 			case 0: 
 				System.out.println("0");
-				break;
+			//	break;
 			case 1: 
 				System.out.println("1");
-				break;
+				//break;
 			case 2: 
 				System.out.println("2");
-				break;
+				//break;
 			default: 
 				System.out.println("Something went wrong :(");
-				break;
+				//break;
 			}
 		}
 		
