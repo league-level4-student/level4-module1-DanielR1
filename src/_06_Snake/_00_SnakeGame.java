@@ -163,7 +163,7 @@ timer.stop();
 JOptionPane.showMessageDialog(null, "You died");
 		// 3. ask them if they want to play again.
 String[]yesno= {"Yes","No"};
-int reset = JOptionPane.showOptionDialog(null, "Choose a day of the week", "E", 0, -1, null,
+int reset = JOptionPane.showOptionDialog(null, "Would you like to play again?", "E", 0, -1, null,
 		yesno, 0);
 		// 4. if they want to play again
 		// reset the snake and the food and start the timer
@@ -174,6 +174,7 @@ if(reset==0) {
 	Location rs = new Location(rx,ry);
 	snake.reset(rs);
 	setFoodLocation();
+	timer.start();
 }
 else {
 	System.exit(0);
